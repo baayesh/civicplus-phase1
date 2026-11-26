@@ -1,1 +1,15 @@
-.venv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+
+# Local data never enters version control.
+data/raw/*
+data/clean/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+
+# Warehouse artifacts
+*.duckdb
+*.duckdb.wal
